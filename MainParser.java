@@ -21,6 +21,13 @@ public class MainParser {
             // Daha sonra bu listeyi postgresqle parçalara ayırarak atacağız
             // databasee uygun classlar da oluşturulabilir, article, publication gibi
 
+            for (int i = 0; i < doc.articles.size(); i++) {
+                System.out.println("Document number: "+ (i+1));
+                System.out.println("Article name: "+doc.articles.get(i).getArticle_name());
+                System.out.println("Article number: "+doc.articles.get(i).getArticle_number());
+                System.out.println("Publication title: "+doc.publications.get(i).getPub_title());
+                System.out.println("Publication year: "+ doc.publications.get(i).getPub_year()+"\n");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
