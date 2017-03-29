@@ -23,9 +23,14 @@ public class ProjectDB {
     PreparedStatement pst = null;
 
 
-    public void SetArticleTable(Article article){}
+    public void SetArticleTable(Article article){
+
+
+
+
+    }
     //public void SetAuthorTable(Documents article){}
-    public void SetPublicationTable(Publication publication){
+    public void SetPublicationTable(Publication publication) {
        /* System.out.println("Publication title: "+doc.publications.get(0).getPub_title());
         System.out.println("Publication year: "+ doc.publications.get(0).getPub_year());
         System.out.println("Publication type: "+ doc.publications.get(0).getPub_type());
